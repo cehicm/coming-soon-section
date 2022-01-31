@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var subscribeBtn=document.getElementById("subscribe-btn"),inputField=document.getElementById("input-field");jQuery,$("#subscribe-btn").on("click",(function(){""!==inputField.value&&inputField.value.includes("@")?($(this).siblings(".input-message").text("input-success").addClass("input-success"),$(this).siblings(".input-message").removeClass("input-rejected")):$(this).siblings(".input-message").addClass("input-rejected")}));
