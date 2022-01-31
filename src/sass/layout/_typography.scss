@@ -1,3 +1,30 @@
+@use "../variables/colors" as colors;
+
 body {
 	font-family: "Josefin Sans";
+}
+
+.main-heading,
+.subheading {
+	font-size: 64px;
+	letter-spacing: 17.32;
+	margin: 0;
+}
+
+.main-heading {
+	font-weight: 300;
+	line-height: 64px;
+	color: colors.$brown-pink;
+}
+
+.subheading {
+	font-weight: 600;
+	line-height: 71px;
+}
+
+.main-text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0px;
 }

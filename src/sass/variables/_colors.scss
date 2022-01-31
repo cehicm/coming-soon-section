@@ -1,0 +1,12 @@
+$white: #ffffff;
+$white-pink: #fff4f4;
+$light-pink: #f8bfbf;
+$brown-pink: #ce9898;
+$coral-pink: #ee8b8b;
+$black: #423a3a;
+$light-pink-gradient: linear-gradient(
+	221.42deg,
+	$white-pink 2.6%,
+	$white 96.36%
+);
+$dark-pink-gradient: linear-gradient(135deg, $light-pink 0%, $coral-pink 100%);
