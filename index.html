@@ -1,5 +1,6 @@
 <html lang="en">
 	<head>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<link rel="stylesheet" href="/dist/css/styles.css" />
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,13 +27,15 @@
 						</p>
 						<div class="input-field">
 							<input
+								onfocus="this.value=''"
 								class="input-email"
 								type="email"
 								name="email"
-								id=""
+								id="input-field"
 								placeholder="Email Address"
 							/>
-							<button class="input-btn"></button>
+							<button id="subscribe-btn" class="input-btn"></button>
+							<p class="input-message">Please provide a valid email</p>
 						</div>
 					</div>
 				</div>

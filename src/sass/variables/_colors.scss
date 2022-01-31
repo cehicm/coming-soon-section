@@ -1,9 +1,10 @@
 $white: #ffffff;
+$black: #423a3a;
 $white-pink: #fff4f4;
 $light-pink: #f8bfbf;
 $brown-pink: #ce9898;
 $coral-pink: #ee8b8b;
-$black: #423a3a;
+$btn-hover-pink: #f6cece;
 $light-pink-gradient: linear-gradient(
 	221.42deg,
 	$white-pink 2.6%,
@@ -11,3 +12,5 @@ $light-pink-gradient: linear-gradient(
 );
 $dark-pink-gradient: linear-gradient(135deg, $light-pink 0%, $coral-pink 100%);
 $brown-button-shadow: #c66e6e3f;
+$rejected-red: #f96464;
+$success-green: #409640;

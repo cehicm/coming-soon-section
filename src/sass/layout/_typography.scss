@@ -31,8 +31,40 @@ body {
 
 .input-email {
 	&::placeholder {
-		font-family: "Josefin Sans";
 		font-size: 16px;
 		color: colors.$brown-pink;
+	}
+}
+
+.input {
+	&-email {
+		padding-left: 30px;
+		&[type="email"] {
+			font-size: 16px;
+			line-height: 28px;
+			color: colors.$black;
+		}
+		&::placeholder {
+			font-size: 16px;
+			color: colors.$brown-pink;
+		}
+	}
+
+	&-message {
+		display: none;
+	}
+	&-rejected,
+	&-success {
+		display: block;
+		font-size: 13px;
+		line-height: 28px;
+		padding-left: 30px;
+	}
+
+	&-rejected {
+		color: colors.$rejected-red;
+	}
+	&-success {
+		color: colors.$success-green;
 	}
 }
