@@ -29,8 +29,10 @@ body {
 	color: colors.$brown-pink;
 }
 
-.email-input {
+.input-email {
 	&::placeholder {
+		font-family: "Josefin Sans";
+		font-size: 16px;
 		color: colors.$brown-pink;
 	}
 }

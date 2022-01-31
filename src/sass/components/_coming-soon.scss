@@ -27,17 +27,37 @@ body {
 		justify-content: center;
 		margin: 185px;
 	}
+	.input-field {
+		position: relative;
 
-	.email-input {
-		height: 56px;
-		width: 445px;
-		margin-top: 15px;
-		border-radius: 28px;
-		opacity: 0.5;
-		border: 1px solid colors.$coral-pink;
+		.input {
+			&-btn {
+				position: absolute;
+				width: 122px;
+				height: 56px;
+				border-radius: 28px;
+				left: 322px;
+				top: 15px;
+				background: colors.$dark-pink-gradient;
+				box-shadow: 0px 15px 20px colors.$brown-button-shadow;
+				border: none;
 
-		&::placeholder {
-			padding-left: 20px;
+				&::before {
+					content: url("/src/images/icon-arrow.svg");
+				}
+			}
+			&-email {
+				height: 56px;
+				width: 445px;
+				margin-top: 15px;
+				border-radius: 28px;
+				opacity: 0.5;
+				border: 1px solid colors.$coral-pink;
+
+				&::placeholder {
+					padding-left: 20px;
+				}
+			}
 		}
 	}
 }
