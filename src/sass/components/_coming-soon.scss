@@ -1,56 +1,70 @@
 @use "../variables/colors" as colors;
+@import "../variables/breakpoints";
 
 body {
 	margin: 0;
 }
 
 .container {
+	height: 851px;
+
 	&-bg-img {
+		height: 851px;
+		width: 90vw;
 		position: absolute;
+		z-index: 1;
+		@include sc-breakpoint(1820) {
+			height: 100%;
+			width: 67vw;
+		}
+	}
+	@include sc-breakpoint(1820) {
+		position: absolute;
+		top: 50%;
+		right: 50%;
+		transform: translate(50%, -50%);
+		width: 100%;
 	}
 }
 
 .wrapper {
 	position: relative;
 	display: flex;
+	background: linear-gradient(
+		150.03deg,
+		colors.$white 0%,
+		colors.$white-pink 84.51%
+	);
+
+	&-left {
+		z-index: 2;
+		margin: 150px;
+		margin-top: 0;
+	}
 
 	.logo-img {
-		height: 100px;
-		background-image: url("/src/images/logo.svg");
-		background-repeat: no-repeat;
-		transform: translateY(-100px);
+		height: 50px;
+		z-index: 2;
+		margin-top: 50px;
+		margin-bottom: 100px;
 	}
 
 	.content {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin: 185px;
+		z-index: 2;
+		max-height: 500px;
+
+		&-img {
+			z-index: 1;
+
+			img {
+				height: 850px;
+			}
+		}
 	}
 	.input-field {
 		position: relative;
 
 		.input {
-			&-btn {
-				position: absolute;
-				width: 122px;
-				height: 56px;
-				border-radius: 28px;
-				left: 322px;
-				top: 15px;
-				background: colors.$dark-pink-gradient;
-				box-shadow: 0px 15px 20px colors.$brown-button-shadow;
-				border: none;
-				cursor: pointer;
-
-				&::before {
-					content: url("/src/images/icon-arrow.svg");
-				}
-
-				&:hover {
-					background: colors.$btn-hover-pink;
-				}
-			}
 			&-email {
 				height: 56px;
 				width: 445px;
@@ -59,5 +73,19 @@ body {
 				border: 1px solid colors.$coral-pink;
 			}
 		}
+	}
+
+	.icon-error {
+		display: none;
+		&--active {
+			display: block;
+			position: absolute;
+			top: 30px;
+			left: 281px;
+		}
+	}
+
+	.input-border-error {
+		border: 2px solid colors.$rejected-red !important;
 	}
 }

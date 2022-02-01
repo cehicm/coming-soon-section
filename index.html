@@ -15,30 +15,44 @@
 				alt="Pink pattern backgroung image"
 			/>
 			<div class="wrapper">
-				<div class="content">
-					<div class="logo-img"></div>
-					<div class="text-content">
-						<h1 class="main-heading">WE'RE</h1>
-						<h2 class="subheading">COMING SOON</h2>
-						<p class="main-text">
-							Hello fellow shoppers! We're currently building our new fashion
-							store. Add your email below to stay up-to-date with announcements
-							and our launch deals.
-						</p>
-						<div class="input-field">
-							<input
-								onfocus="this.value=''"
-								class="input-email"
-								type="email"
-								name="email"
-								id="input-field"
-								placeholder="Email Address"
-							/>
-							<button id="subscribe-btn" class="input-btn"></button>
-							<p class="input-message">Please provide a valid email</p>
+				<div class="wrapper-left">
+					<img class="logo-img" src="/src/images/logo.svg" />
+					<div class="content">
+						<div class="text-content">
+							<h1 class="main-heading">WE'RE</h1>
+							<h2 class="subheading">COMING SOON</h2>
+							<p class="main-text">
+								Hello fellow shoppers! We're currently building our new fashion
+								store. Add your email below to stay up-to-date with
+								announcements and our launch deals.
+							</p>
+							<div class="input-field">
+								<input
+									required
+									pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+									onfocus="this.value=''"
+									class="input-email"
+									type="email"
+									name="email"
+									id="input-field"
+									placeholder="Email Address"
+								/>
+								<img
+									class="icon-error"
+									src="/src/images/icon-error.svg"
+									alt="Error icon"
+								/>
+								<button
+									id="subscribe-btn"
+									type="submit"
+									class="input-btn"
+								></button>
+								<p class="input-message">Please provide a valid email</p>
+							</div>
 						</div>
 					</div>
 				</div>
+
 				<div class="content-img">
 					<img src="/src/images/hero-desktop.jpg" alt="Picture of woman" />
 				</div>

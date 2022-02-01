@@ -28,34 +28,7 @@
   src: local(""), url("/dist/fonts/josefin-sans-v20-latin/josefin-sans-v20-latin-600.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/josefin-sans-v20-latin/josefin-sans-v20-latin-600.woff2") format("woff2"), url("/dist/fonts/josefin-sans-v20-latin/josefin-sans-v20-latin-600.woff") format("woff"), url("/dist/fonts/josefin-sans-v20-latin/josefin-sans-v20-latin-600.ttf") format("truetype"), url("/dist/fonts/josefin-sans-v20-latin/josefin-sans-v20-latin-600.svg#JosefinSans") format("svg");
   /* Legacy iOS */
 }
-body {
-  margin: 0;
-}
-
-.container-bg-img {
-  position: absolute;
-}
-
-.wrapper {
-  position: relative;
-  display: flex;
-}
-.wrapper .logo-img {
-  height: 100px;
-  background-image: url("/src/images/logo.svg");
-  background-repeat: no-repeat;
-  transform: translateY(-100px);
-}
-.wrapper .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 185px;
-}
-.wrapper .input-field {
-  position: relative;
-}
-.wrapper .input-field .input-btn {
+.input-btn {
   position: absolute;
   width: 122px;
   height: 56px;
@@ -67,11 +40,70 @@ body {
   border: none;
   cursor: pointer;
 }
-.wrapper .input-field .input-btn::before {
+.input-btn::before {
   content: url("/src/images/icon-arrow.svg");
 }
-.wrapper .input-field .input-btn:hover {
+.input-btn:hover {
   background: #f6cece;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  height: 851px;
+}
+.container-bg-img {
+  height: 851px;
+  width: 90vw;
+  position: absolute;
+  z-index: 1;
+}
+@media (min-width: 1820px) {
+  .container-bg-img {
+    height: 100%;
+    width: 67vw;
+  }
+}
+@media (min-width: 1820px) {
+  .container {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 100%;
+  }
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  background: linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
+}
+.wrapper-left {
+  z-index: 2;
+  margin: 150px;
+  margin-top: 0;
+}
+.wrapper .logo-img {
+  height: 50px;
+  z-index: 2;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.wrapper .content {
+  z-index: 2;
+  max-height: 500px;
+}
+.wrapper .content-img {
+  z-index: 1;
+}
+.wrapper .content-img img {
+  height: 850px;
+}
+.wrapper .input-field {
+  position: relative;
 }
 .wrapper .input-field .input-email {
   height: 56px;
@@ -79,6 +111,23 @@ body {
   margin-top: 15px;
   border-radius: 28px;
   border: 1px solid #ee8b8b;
+}
+.wrapper .icon-error {
+  display: none;
+}
+.wrapper .icon-error--active {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 281px;
+}
+.wrapper .input-border-error {
+  border: 2px solid #f96464 !important;
+}
+
+.input-btn--clicked {
+  transform: translateX(-446px);
+  transition: cubic-bezier(0.47, 0, 0.75, 0.72) 1s;
 }
 
 body {
