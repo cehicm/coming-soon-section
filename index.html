@@ -15,8 +15,22 @@
 				alt="Pink pattern backgroung image"
 			/>
 			<div class="wrapper">
-				<img class="logo-img" src="/src/images/logo.svg" />
-
+				<div class="logo-img">
+					<img src="/src/images/logo.svg" alt="logo image" />
+				</div>
+				<div class="content-img">
+					<picture>
+						<source
+							srcset="/src/images/hero-desktop.jpg"
+							media="(min-width: 1024px)"
+						/>
+						<source
+							srcset="/src/images/hero-mobile.jpg"
+							media="(min-width: 320px)"
+						/>
+						<img src="/src/images/hero-desktop.jpg" alt="Picture of woman" />
+					</picture>
+				</div>
 				<div class="wrapper-form">
 					<div class="content">
 						<div class="text-content">
@@ -53,13 +67,8 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="content-img">
-					<img src="/src/images/hero-desktop.jpg" alt="Picture of woman" />
-				</div>
 			</div>
 		</section>
-
 		<script src="/dist/scripts/app.js"></script>
 	</body>
 </html>
