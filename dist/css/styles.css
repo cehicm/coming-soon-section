@@ -260,11 +260,6 @@ body {
   }
 }
 
-.input-email::placeholder {
-  font-size: 16px;
-  color: #ce9898;
-}
-
 .input-email {
   padding-left: 30px;
 }

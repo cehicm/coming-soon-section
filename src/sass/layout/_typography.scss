@@ -37,13 +37,6 @@ body {
 	color: colors.$brown-pink;
 }
 
-.input-email {
-	&::placeholder {
-		font-size: 16px;
-		color: colors.$brown-pink;
-	}
-}
-
 .input {
 	&-email {
 		padding-left: 30px;
@@ -61,6 +54,7 @@ body {
 	&-message {
 		display: none;
 	}
+
 	&-rejected,
 	&-success {
 		display: block;
