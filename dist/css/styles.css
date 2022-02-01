@@ -77,7 +77,16 @@ body {
 .wrapper-form {
   z-index: 2;
   grid-row: 4;
-  grid-column: 3/6;
+}
+@media (min-width: 1024px) {
+  .wrapper-form {
+    grid-column: 2/6;
+  }
+}
+@media (min-width: 1400px) {
+  .wrapper-form {
+    grid-column: 3/6;
+  }
 }
 @media (min-width: 1820px) {
   .wrapper-form {
@@ -88,7 +97,16 @@ body {
   height: 50px;
   z-index: 2;
   margin-top: 50px;
-  grid-column: 3/3;
+}
+@media (min-width: 1024px) {
+  .wrapper .logo-img {
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 1400px) {
+  .wrapper .logo-img {
+    grid-column: 3/3;
+  }
 }
 @media (min-width: 1820px) {
   .wrapper .logo-img {

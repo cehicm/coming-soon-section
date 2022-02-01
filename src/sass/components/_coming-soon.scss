@@ -33,22 +33,32 @@ body {
 	);
 
 	&-form {
+		@include sc-breakpoint(1024) {
+			grid-column: 2/6;
+		}
+		@include sc-breakpoint(1400) {
+			grid-column: 3/6;
+		}
 		@include sc-breakpoint(1820) {
 			grid-column: 4/6;
 		}
 		z-index: 2;
 		grid-row: 4;
-		grid-column: 3/6;
 	}
 
 	.logo-img {
+		@include sc-breakpoint(1024) {
+			grid-column: 2/3;
+		}
+		@include sc-breakpoint(1400) {
+			grid-column: 3/3;
+		}
 		@include sc-breakpoint(1820) {
 			grid-column: 4/4;
 		}
 		height: 50px;
 		z-index: 2;
 		margin-top: 50px;
-		grid-column: 3/3;
 	}
 
 	.content {
