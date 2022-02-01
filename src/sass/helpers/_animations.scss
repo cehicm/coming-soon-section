@@ -1,0 +1,8 @@
+@use "../variables/colors" as colors;
+
+.input {
+	&-btn--clicked {
+		transform: translateX(-446px);
+		transition: cubic-bezier(0.47, 0, 0.75, 0.72) 1s;
+	}
+}
