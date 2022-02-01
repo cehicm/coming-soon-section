@@ -123,11 +123,16 @@ body {
 				@include sc-breakpoint(768) {
 					width: 445px;
 				}
-				width: 250px;
+				width: 320px;
 				height: 56px;
 				margin-top: 15px;
 				border-radius: 28px;
 				border: 1px solid colors.$coral-pink;
+
+				&:focus {
+					outline: none !important;
+					border: 2px solid colors.$coral-pink;
+				}
 			}
 		}
 	}

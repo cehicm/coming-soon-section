@@ -32,7 +32,7 @@
   width: 79px;
   height: 56px;
   position: absolute;
-  left: 205px;
+  left: 241px;
   top: 15px;
   border-radius: 28px;
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
@@ -190,7 +190,7 @@ body {
 }
 .wrapper .input-field .input-email {
   background: #fff4f4;
-  width: 250px;
+  width: 320px;
   height: 56px;
   margin-top: 15px;
   border-radius: 28px;
@@ -200,6 +200,10 @@ body {
   .wrapper .input-field .input-email {
     width: 445px;
   }
+}
+.wrapper .input-field .input-email:focus {
+  outline: none !important;
+  border: 2px solid #ee8b8b;
 }
 .wrapper .icon-error {
   display: none;
