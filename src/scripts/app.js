@@ -1,4 +1,3 @@
-const subscribeBtn = document.getElementById("subscribe-btn");
 const inputField = document.getElementById("input-field");
 (function () {
 	$("#subscribe-btn").on("click", function () {
