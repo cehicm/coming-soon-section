@@ -1,9 +1,1 @@
 @use "../variables/colors" as colors;
-
-.input {
-	&-btn--clicked {
-		transform: translateX(-446px);
-		opacity: 0;
-		transition: opacity 2s, transform 3s;
-	}
-}
