@@ -7,19 +7,19 @@ body {
 
 .main-heading,
 .subheading {
-	@include sc-breakpoint(768) {
-		font-size: 64px;
-		line-height: 64px;
-	}
 	font-size: 40px;
 	line-height: 42px;
 	letter-spacing: 17.32;
 	margin: 0;
+
+	@include sc-breakpoint(768) {
+		font-size: 64px;
+		line-height: 64px;
+	}
 }
 
 .main-heading {
 	font-weight: 300;
-
 	color: colors.$brown-pink;
 }
 
@@ -28,13 +28,14 @@ body {
 }
 
 .main-text {
-	@include sc-breakpoint(768) {
-		font-size: 16px;
-	}
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 28px;
 	color: colors.$brown-pink;
+
+	@include sc-breakpoint(768) {
+		font-size: 16px;
+	}
 }
 
 .input {
@@ -49,10 +50,6 @@ body {
 			font-size: 16px;
 			color: colors.$brown-pink;
 		}
-	}
-
-	&-message {
-		display: none;
 	}
 
 	&-rejected,

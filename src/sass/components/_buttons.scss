@@ -3,16 +3,6 @@
 
 .input {
 	&-btn {
-		@include sc-breakpoint(768) {
-			width: 122px;
-			left: 322px;
-		}
-
-		width: 79px;
-		height: 56px;
-		position: absolute;
-		left: 241px;
-		top: 15px;
 		border-radius: 28px;
 		background: colors.$dark-pink-gradient;
 		box-shadow: 0px 15px 20px colors.$brown-button-shadow;
@@ -23,7 +13,7 @@
 			content: url("/src/images/icon-arrow.svg");
 		}
 		&:hover {
-			background: colors.$btn-hover-pink;
+			background: colors.$darker-pink;
 		}
 	}
 }

@@ -29,28 +29,17 @@
   /* Legacy iOS */
 }
 .input-btn {
-  width: 79px;
-  height: 56px;
-  position: absolute;
-  left: 241px;
-  top: 15px;
   border-radius: 28px;
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
   box-shadow: 0px 15px 20px #c66e6e3f;
   border: none;
   cursor: pointer;
 }
-@media (min-width: 768px) {
-  .input-btn {
-    width: 122px;
-    left: 322px;
-  }
-}
 .input-btn::before {
   content: url("/src/images/icon-arrow.svg");
 }
 .input-btn:hover {
-  background: #f6cece;
+  background: #d56060;
 }
 
 body {
@@ -120,11 +109,11 @@ body {
   }
 }
 .wrapper .logo-img {
-  margin-top: 40px;
-  margin-left: 20px;
   height: auto;
   z-index: 2;
   grid-row: 1;
+  margin-top: 40px;
+  margin-left: 20px;
 }
 @media (min-width: 1024px) {
   .wrapper .logo-img {
@@ -167,6 +156,7 @@ body {
   }
 }
 .wrapper .content .text-content {
+  padding: 0 10px;
   text-align: center;
 }
 @media only screen and (max-width: 1023px) and (min-width: 420px) {
@@ -187,23 +177,35 @@ body {
 }
 .wrapper .input-field {
   position: relative;
+  margin-top: 40px;
 }
 .wrapper .input-field .input-email {
-  background: #fff4f4;
-  width: 320px;
-  height: 56px;
-  margin-top: 15px;
+  width: 300px;
+  height: 55px;
   border-radius: 28px;
   border: 1px solid #ee8b8b;
+  background: #fff4f4;
+}
+.wrapper .input-field .input-email:focus {
+  outline: none !important;
+  border: 2px solid #ee8b8b;
 }
 @media (min-width: 768px) {
   .wrapper .input-field .input-email {
     width: 445px;
   }
 }
-.wrapper .input-field .input-email:focus {
-  outline: none !important;
-  border: 2px solid #ee8b8b;
+.wrapper .input-field .input-btn {
+  width: 30%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (min-width: 768px) {
+  .wrapper .input-field .input-btn {
+    width: 122px;
+  }
 }
 .wrapper .icon-error {
   display: none;
@@ -211,17 +213,11 @@ body {
 .wrapper .icon-error--active {
   display: block;
   position: absolute;
-  top: 30px;
-  left: 281px;
+  top: 45%;
+  right: 150px;
 }
 .wrapper .input-border-error {
   border: 2px solid #f96464 !important;
-}
-
-.input-btn--clicked {
-  transform: translateX(-446px);
-  opacity: 0;
-  transition: opacity 2s, transform 3s;
 }
 
 body {
@@ -275,9 +271,6 @@ body {
 .input-email::placeholder {
   font-size: 16px;
   color: #ce9898;
-}
-.input-message {
-  display: none;
 }
 .input-rejected, .input-success {
   display: block;
