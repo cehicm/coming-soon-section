@@ -129,11 +129,11 @@ body {
 	}
 	.input-field {
 		position: relative;
-		margin-top: 40px;
+		margin-top: 30px;
 
 		.input {
 			&-email {
-				width: 300px;
+				width: 250px;
 				height: 55px;
 				border-radius: 28px;
 				border: 1px solid colors.$coral-pink;
@@ -169,8 +169,8 @@ body {
 		&--active {
 			display: block;
 			position: absolute;
-			top: 45%;
-			right: 150px;
+			top: 18px;
+			right: 35%;
 		}
 	}
 

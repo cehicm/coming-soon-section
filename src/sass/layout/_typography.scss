@@ -42,9 +42,14 @@ body {
 	&-email {
 		padding-left: 30px;
 		&[type="email"] {
+			font-size: 12px;
 			font-size: 16px;
 			line-height: 28px;
 			color: colors.$black;
+
+			@include sc-breakpoint(768) {
+				font-size: 16px;
+			}
 		}
 		&::placeholder {
 			font-size: 16px;
